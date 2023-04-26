@@ -49,3 +49,4 @@ rem virus rage
     pause > nul
     start "" "removal.bat"
 rem 0
+rem I'm not serious :D
