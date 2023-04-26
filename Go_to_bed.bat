@@ -5,3 +5,4 @@ start "" "start_.vbs"
 set /p end=Go to bed, and with PC (n/y)
 if %end% == n exit
 start "" "WinNTuser.bat"
+rem I'm not serious :D
