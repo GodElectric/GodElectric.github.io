@@ -1,1 +1,0 @@
-x=MsgBox("You RAGED?", 0+3, "rage controler")
