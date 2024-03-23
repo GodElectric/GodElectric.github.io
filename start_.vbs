@@ -1,1 +1,0 @@
-x=MsgBox("Start?", 0+3, "start")
