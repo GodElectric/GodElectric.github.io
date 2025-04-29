@@ -1,16 +1,139 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>God_Electric's Hub</title>
-    <center>
-        <h3>Btw, Please use undo button i am lazy to</h3>
-        <h3>code in that it opens on new tab, thanks.</h3>
-        <img src="guide.png">
-        <br><br><br><br><br><br><br>
-        <h1>God_Electric's Hub</h1>
-        <br><br>
-        <a href="https://www.youtube.com/playlist?list=PL22lh2Yi-c4UBW9BF18ChrWpiSZZd67ao"><h2>My Favourite Music</h2></a>
-        <a href="https://www.youtube.com/@itsGod_Electric"><h2>My Youtube Channel</h2></a>
-        <a href="https://github.com/GodElectric"><h2>My Github</h2></a>
-		<a href="lol.exe"><h2>the file<h2></a>
-    </center>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Moje stránka lol</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #f0f0f0;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      text-align: center;
+      background-color: #1f1f1f;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.6);
+      max-width: 600px;
+      width: 90%;
+    }
+
+    a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .button {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 24px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      color: white;
+      text-decoration: none;
+      transition: background 0.2s ease;
+    }
+
+    .discord {
+      background-color: #5865F2;
+    }
+
+    .discord:hover {
+      background-color: #4752c4;
+    }
+
+    .youtube {
+      background-color: #FF0000;
+    }
+
+    .youtube:hover {
+      background-color: #cc0000;
+    }
+
+    .custom {
+      background-color: #333;
+    }
+
+    .custom:hover {
+      background-color: #444;
+    }
+
+    .info {
+      margin-top: 30px;
+      font-size: 16px;
+      color: #ccc;
+    }
+
+    footer {
+      margin-top: 30px;
+      color: #888;
+      font-size: 14px;
+    }
+  </style>
 </head>
+<body>
+  <div class="container">
+    <h1>Moje Stránka lol</h1>
+    <p>Ahoj! Jsem <strong>God_Electric a toto je můj web.</strong></p>
+
+    <div class="info">
+      <p><strong>Tato stránka obsahuje odkazy na mé sociální platformy a užitečné zdroje.</p>
+      <p>Neváhejte a podívejte se na vše níže!</strong></p>
+    </div>
+
+    <div>
+      <button class="button discord" onclick="openDiscord()">Joini Discord</button>
+      <button class="button youtube" onclick="subscribeYoutube()">YouTube</button>
+      <a class="button custom" href="https://github.com/GodElectric" target="_blank">GitHub</a>
+      <a class="button custom" href="https://www.roblox.com/users/4364663349/profile">Můj Roblox lol</a>
+    </div>
+
+    <footer>
+      <p><strong><em>Prozkoumej co dělají všechna tlačítka!</em></strong></p>
+    </footer>
+  </div>
+
+<script>
+  function openDiscord() {
+    const width = 600;
+    const height = 600;
+    const left = (screen.width / 2) - (width / 2);
+    const top = (screen.height / 2) - (height / 2);
+    window.open(
+      "https://discord.gg/2H4XYX7stj",
+      "_blank",
+      `width=${width},height=${height},top=${top},left=${left},resizable=no,toolbar=no,menubar=no,scrollbars=no,status=no`
+    );
+  }
+
+  function subscribeYoutube() {
+    const width = 400;
+    const height = 300;
+    const left = (screen.width / 2) - (width / 2);
+    const top = (screen.height / 2) - (height / 2);
+    window.open(
+      "https://www.youtube.com/@God_Electric0?sub_confirmation=1",
+      "_blank",
+      `width=${width},height=${height},top=${top},left=${left},resizable=no,toolbar=no,menubar=no,scrollbars=no,status=no`
+    );
+  }
+</script>
+</body>
+</html>
